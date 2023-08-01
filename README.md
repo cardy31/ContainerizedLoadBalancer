@@ -1,7 +1,9 @@
 # Containerized Load Balancer
 Super simple Nginx load balancer in a container.
 
-Commands to run it. Make sure to replace `$IMAGE_ID` with the ID of the image built by `docker build`.
+Replace `$SERVER_IP_X` in `nginx.conf` with the IPs of your servers.
+
+Use the commands below to run the load balancer. Make sure to replace `$IMAGE_ID` with the ID of the image built by `docker build`. `docker images` will list all available images.
 
 ```text
 sudo docker build .
